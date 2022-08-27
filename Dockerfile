@@ -1,4 +1,3 @@
-FROM openjdk:11
-COPY spring-boot-mysql-example-0.0.1-SNAPSHOT.jar /
-WORKDIR /
-CMD ["java", "-jar", "spring-boot-mysql-example-0.0.1-SNAPSHOT.jar"]
+From tomcat:8-jre8
+
+COPY ./webapp.war /usr/local/tomcat/webapps
